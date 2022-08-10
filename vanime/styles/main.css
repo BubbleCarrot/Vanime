@@ -1,0 +1,745 @@
+/*=================================
+Global
+=================================*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	font-size: 5.5vw;
+}
+
+p {
+	line-height: 1.2;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*=================================
+Header
+=================================*/
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 2.5vw 2.6vw;
+}
+
+.logo-cont {
+	display: flex;
+}
+
+.logo-cont img {
+	height: 10vw;
+	width: auto;
+}
+
+.logo-cont p {
+	display: none;
+}
+
+.gn {
+	display: flex;
+	align-items: center;
+}
+
+.gn ul li {
+	display: none;
+}
+
+.gn ul li:nth-child(2) {
+	display: inline-block;
+	margin-right: 2.6vw;
+}
+
+.gn ul a {
+	color: rgba(0, 0, 0, 1.0);
+	text-transform: uppercase;
+}
+
+.gn button {
+	background-color: #fff;
+	border-radius: 4px;
+	border: solid #000 1px;
+	padding: 1vw 5vw;
+}
+
+/*=================================
+Main
+=================================*/
+
+h1 {
+	font-size: 13vw;
+	color: rgba(35, 165, 224, 1.0);
+	margin: 6.8vw 0;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h2 {
+	font-weight: 700;
+	color: rgba(11, 180, 207, 1.0);
+	text-transform: uppercase;
+	font-size: 8.5vw;
+	margin-bottom: 2.5vw;
+}
+
+/*=================================
+Explore
+=================================*/
+
+.explore {
+	background-color: rgba(245, 245, 245, 1.0);
+	padding: 13.5vw 0;
+	margin-bottom: 13.5vw;
+}
+
+.explore p {
+	margin-bottom: 10vw;
+	padding: 0 7vw;
+}
+
+.btn {
+	background-color: rgba(252, 200, 229, 1.0);
+	color: black;
+	padding: 3vw 9vw;
+	border-radius: 2px;
+	text-transform: uppercase;
+}
+
+.explore img {
+	width: 90vw;
+	height: 64.5vw;
+	border: #000 solid 1px;
+}
+
+/*=================================
+Partners
+=================================*/
+
+.partners p {
+	margin-bottom: 10vw;
+	padding: 0 7vw;
+}
+
+.partners ul {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+}
+
+.partners ul li {
+	display: grid;
+	margin-bottom: 9vw;;
+	justify-items: center;
+	align-items: center;
+	width: 40vw;
+	height: 27vw;
+	border: solid #000 1px;
+	border-radius: 4px;
+}
+
+.partners ul li img {
+	width: 100%;
+	height: auto;
+}
+
+.partners ul li .why {
+	width: 60%;
+	height: auto;
+}
+
+/*=================================
+Events
+=================================*/
+
+.events {
+	background-color: rgba(245, 245, 245, 1.0);
+	padding: 13.5vw 0 4vw;
+}
+
+.events p {
+	margin-bottom: 10vw;
+	padding: 0 5vw;
+}
+
+.events ul {
+	text-align: left;
+}
+
+.events ul li {
+	height: 120vw;
+	background-color: #fff;
+	margin-bottom: 10vw;
+}
+
+.events ul li h3 {
+	margin: 6vw 0;
+	font-weight: 400;
+	font-size: 8vw;
+	padding: 0 5vw;
+}
+
+.events ul li .content {
+	display: none;
+}
+
+.events .card-img {
+	height: 70%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.events .music-img {
+	background-image: url(../images/rectangle.jpg);
+}
+
+.events .gaming-img {
+	background-image: url(../images/rectangle_1.jpg);
+}
+
+.events .food-img {
+	background-image: url(../images/rectangle_2.jpg);
+}
+
+.events .guests-img {
+	background-image: url(../images/rectangle_3.jpg);
+}
+
+.events ul li a {
+	font-size: 6.2vw;
+	color: rgba(0, 0, 0, 1.0);
+}
+
+.events ul li a:after {
+	content:" \203A";
+}
+
+/*=================================
+Convention
+=================================*/
+
+.convention {
+	padding: 13.5vw 0;
+}
+
+.convention .bnr {
+	background-image: url(../images/background_2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 150vw;
+}
+
+.convention .overlay {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 9vw 0;
+	background-color: rgba(0, 0, 0, .6);
+	height: 100%;
+}
+
+.convention p {
+	padding: 0 7vw;
+	color: #0BB4CF;
+	text-transform: uppercase;
+}
+
+.convention .marg-btm {
+	margin-bottom: 9vw;
+}
+
+/*=================================
+Footer
+=================================*/
+
+footer {
+	background-color: #0092C8;
+	padding: 8vw 0;
+}
+
+.foot-gn {
+	padding: 0 7vw;
+}
+
+footer .foot-gn ul {
+	margin-bottom: 13.6vw;
+	border-bottom: solid #fff 1px;
+	padding-bottom: 5vw;
+	display: flex;
+	flex-direction: column; 
+}
+
+footer ul li {
+	margin-bottom: 1.5vw;
+}
+
+footer ul li:nth-child(4) {
+	order: -1;
+	font-size: 6vw;
+	margin-bottom: 5.5vw;
+	font-weight: 500;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer .uppercase {
+	text-transform: uppercase;
+}
+
+footer p {
+	color: #fff;
+}
+
+/*=================================
+Media Queries
+=================================*/
+
+@media (min-width: 576px) {
+
+	/*=================================
+	Global
+	=================================*/
+
+	body {
+		font-size: 4.4vw;
+	}
+
+	/*=================================
+	Header
+	=================================*/
+
+	header {
+		padding: 2vw 2.08vw;
+	}
+
+	.logo-cont img {
+		height: 8vw;
+	}
+
+	.gn button {
+		padding: 0.8vw 4vw;
+	}
+
+	/*=================================
+	Main
+	=================================*/
+
+	h1 {
+		font-size: 10.4vw;
+		margin: 5.44vw 0;
+	}
+
+	h2 {
+		font-size: 6.8vw;
+		margin-bottom: 2vw;
+	}
+
+	/*=================================
+	Explore
+	=================================*/
+
+	.explore {
+		padding: 10.8vw 0;
+		margin-bottom: 10.8vw;
+	}
+
+	.explore p {
+		margin-bottom: 8vw;
+		padding: 0 5.6vw;
+	}
+
+	.btn {
+		padding: 2.4vw 7.2vw;
+	}
+
+	.explore img {
+		width: 72vw;
+		height: 51.6vw;
+	}
+
+	/*=================================
+	Partners
+	=================================*/
+
+	.partners p {
+		margin-bottom: 8vw;
+		padding: 0 5.6vw;
+	}
+
+	.partners ul li {
+		margin-bottom: 7.2vw;
+		width: 32vw;
+		height: 21.6vw;
+	}
+
+	/*=================================
+	Events
+	=================================*/
+
+	.events {
+		padding: 10.8vw 0 3.2vw;
+	}
+
+	.events p {
+		margin-bottom: 8vw;
+		padding: 0 4vw;
+	}
+
+	.events ul li {
+		height: 96vw;
+		margin-bottom: 8vw;
+	}
+
+	.events ul li h3 {
+		margin: 4.8vw 0;
+		font-size: 6.4vw;
+		padding: 0 4vw;
+	}
+
+	.events ul li a {
+		font-size: 4.96vw;
+	}
+
+	/*=================================
+	Convention
+	=================================*/
+
+	.convention {
+		padding: 10.8vw 0;
+	}
+
+	.convention .bnr {
+		height: 120vw;
+	}
+
+	.convention .overlay {
+		padding: 7.2vw 0;
+	}
+
+	.convention p {
+		padding: 0 5.6vw;
+	}
+
+	.convention .marg-btm {
+		margin-bottom: 7.2vw;
+	}
+
+	/*=================================
+	Footer
+	=================================*/
+
+	footer {
+		padding: 6.4vw 0;
+	}
+
+	.foot-gn {
+		padding: 0 5.6vw;
+	}
+
+	footer .foot-gn ul {
+		margin-bottom: 10.88vw;
+		padding-bottom: 4vw;
+	}
+
+	footer ul li {
+		margin-bottom: 1.2vw;
+	}
+
+	footer ul li:nth-child(4) {
+		font-size: 4.8vw;
+		margin-bottom: 4.4vw;
+	}
+
+}
+
+@media (min-width: 768px) {
+
+
+
+}
+
+@media (min-width: 992px) {
+
+	/*=================================
+	Global
+	=================================*/
+
+	body {
+		font-size: 1.5vw;
+		text-align: left;
+	}
+
+	/*=================================
+	Header
+	=================================*/
+
+	header {
+		padding: 2vw 2.08vw 0;
+	}
+
+	.logo-cont {
+		align-items: center;
+	}
+
+	.logo-cont img {
+		height: 3vw;
+		width: auto;
+	}
+
+	.logo-cont p {
+		display: block;
+		font-size: 2.2vw;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	.logo-cont a {
+		color: #000;
+	}
+
+	.gn ul li {
+		display: inline-block;
+		margin: 0 1.5vw;
+		font-size: 1.2vw;
+	}
+
+	.gn ul li:nth-child(2) {
+		display: inline-block;
+		margin-right: 1.5vw;
+	}
+
+	.gn button {
+		padding: 0.4vw 2vw;
+		font-size: 1.2vw;
+	}
+
+	/*=================================
+	Main & Headers
+	=================================*/
+
+	h1 {
+		font-size: 6vw;
+		margin: 5vw 0;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 3.4vw;
+		margin-bottom: 1vw;
+	}
+
+	.partners h2, .events h2 {
+		text-align: center;
+	}
+
+	.partners h2 {
+		margin-bottom: 3vw;
+	}
+
+	.events h2 {
+		margin-bottom: 1.5vw;
+	}
+
+	.convention h2 {
+		font-size: 4vw;
+	}
+
+	/*=================================
+	Explore
+	=================================*/
+
+	.explore {
+		padding: 6vw 8vw; 
+		margin-bottom: 5.4vw;
+		display: flex;
+		align-items: center;
+	}
+
+	.explore p {
+		margin: 2.5vw 0 5vw;
+		padding-left: 0;
+	}
+
+	.btn {
+		padding: 1.2vw 3.6vw;
+		font-size: 1.2vw;
+	}
+
+	.explore img {
+		width: 46.0465vw;
+		height: 33vw;
+	}
+
+	.explore .content {
+		flex-basis: 45%;
+		max-width: 45%;
+	}
+
+	/*=================================
+	Partners
+	=================================*/
+
+	.partners {
+		padding: 3.5vw 0 10vw;
+	}
+
+	.partners .content{
+		display: flex;
+	}
+
+	.partners p {
+		margin-bottom: 4vw;
+		padding: 3vw 4vw 0 14vw;
+		max-width: 50%;
+		flex-basis: 50%;
+	}
+
+	.partners ul {
+		max-width: 50%;
+		flex-basis: 50%;
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: start;
+		padding-right: 18vw;
+	}
+
+	.partners ul li {
+		margin-bottom: 3vw;
+		width: 8.9vw;
+		height: 6vw;
+	}
+
+	/*=================================
+	Events
+	=================================*/
+
+	.events {
+		padding: 5.4vw 0 9vw;
+	}
+
+	.events p:first-of-type {
+		text-align: center;
+		margin-bottom: 1.8vw;
+	}
+
+	.events p {
+		padding: 0 1.4vw;
+		height: 3.6vw;
+		font-size: 1.3vw;
+		line-height: 1.5;
+	}
+
+	.events ul .card-img {
+		background-position: center;
+		height: 60%;
+	}
+
+	.events ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	.events ul li {
+		height: 32.375vw;
+		width: 18.5vw;
+		margin: 1vw;
+	}
+
+	.events ul li h3 {
+		margin: 1.8vw 0 0.8vw;
+		font-size: 1.6vw;
+		padding: 0 1.4vw;
+	}
+
+	.events ul li .content {
+		display: block;
+		text-align: left;
+		padding-bottom: 0vw;
+		font-size: 0.8vw;
+	}
+
+	.events ul li a {
+		font-size: 1.2vw;
+	}
+
+	/*=================================
+	Convention
+	=================================*/
+
+	.convention {
+		padding: 4vw 0 15vw;
+		text-align: center;
+	}
+
+	.convention .bnr {
+		height: 40vw;
+		width: 80vw;
+		margin: 0 auto;
+	}
+
+	.convention .overlay {
+		padding: 3.6vw 0;
+	}
+
+	.convention p {
+		padding: 0 2.8vw;
+		font-size: 3.6vw;
+	}
+
+	.convention .marg-btm {
+		margin-bottom: 3.6vw;
+	}
+
+	/*=================================
+	Footer
+	=================================*/
+
+	footer {
+		padding: 3.2vw 0 1.4vw;
+	}
+
+	.foot-gn {
+		padding: 0 12vw;
+		margin-top: 3vw;
+	}
+
+	footer .foot-gn ul {
+		padding-bottom: 0;
+		flex-direction: row;
+		margin-bottom: 8vw;
+	}
+
+	footer ul li {
+		margin-bottom: 0;
+		max-width: 14.285%;
+		flex-basis: 14.285%;
+		text-align: center;
+		font-size: 1.2vw;
+	}
+
+	footer ul li:nth-child(4) {
+		font-size: 1.6vw;
+		margin-bottom: 2.2vw;
+		order: 0;
+	}
+
+	footer p {
+		text-align: center;
+		font-size: 1.1vw;
+		font-weight: 300;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1440px) {
+
+}
